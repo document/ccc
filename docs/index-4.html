@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="keywords">
+<meta name="description" content="JavaScript.com is a resource for the JavaScript community. You will find resources and examples for JavaScript beginners as well as support for JavaScript experts. Learn JavaScript or free with our easy to use input output machine.">
+<meta property="og:description" content="JavaScript.com is a resource for the JavaScript community. You will find resources and examples for JavaScript beginners as well as support for JavaScript experts. Learn JavaScript or free with our easy to use input output machine.">
+<meta name="twitter:description" content="JavaScript.com is a resource for the JavaScript community. You will find resources and examples for JavaScript beginners as well as support for JavaScript experts. Learn JavaScript or free with our easy to use input output machine.">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pluralsight" />
+<meta property="og:image" content="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/resource-center/resource-center-default.jpg" />
+<meta name="twitter:image" content="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/resource-center/resource-center-default.jpg" />
+<meta name="robots" content="index, follow">
+<meta name="content-type" content="Page" />
+<meta name="categories" content="page" />
+<link rel="canonical" href="https://www.javascript.com/" />
+<script data-cfasync="false">window.wcmmodedisabled = true;</script>
+<script data-cfasync="false">
+function getParameterByName(e,o){o||(o=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var n=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(o);return n&&n[2]?decodeURIComponent(n[2].replace(/\+/g," ")):""}function changeHistoryQueryParam(e,o,n,t,a){if(history.pushState){var i=""==window.location.search?"?":window.location.search;if(-1!==decodeURIComponent(i).indexOf(e+"=")){var c=getParameterByName(e);if(t)if(n){var d=(p=c.split(",")).indexOf(o);if(-1<d&&p.splice(d,1),0===p.length){var r=new RegExp("&?"+e+"=[^&]*","g");i=i.replace(r,"")}else i=i.replace(e+"="+encodeURIComponent(c),e+"="+encodeURIComponent(p.join(",")))}else{var p=[];c?p=c.split(","):c="",-1===p.indexOf(o)&&(p.push(o),i=i.replace(e+"="+encodeURIComponent(c),e+"="+encodeURIComponent(p.join(","))))}else if(n){r=new RegExp("&?"+e+"=[^&]*","g");i=i.replace(r,"")}else i=i.replace(e+"="+encodeURIComponent(c),e+"="+encodeURIComponent(o))}else n||(i+="?"==i?e+"="+encodeURIComponent(o):"&"+e+"="+encodeURIComponent(o));var m=window.location.protocol+"//"+window.location.host+window.location.pathname+(a?decodeURIComponent(i):i);window.history.pushState({path:m},"",m)}}var doNotTrack=-1<document.cookie.indexOf("ps_optout=1")||-1<document.URL.indexOf("dnt=true"),oneHour=36e5,trkDate=new Date(Date.now()+oneHour);if(document.cookie="ps_trk="+(doNotTrack?"0":"1")+"; expires="+trkDate.toUTCString()+"; path=/"+(-1<document.URL.indexOf("pluralsight.com")?"; domain=pluralsight.com":""),window.DemandbaseMini={},window.minidbready=function(e){window.DemandbaseMini={IP:{CompanyProfile:e}}},-1<document.cookie.indexOf("ps_trk=1")){var s=document.createElement("script");s.type="text/javascript",s.src="//api.demandbase.com/api/v2/ip.json?key=012bc11d09ef8437662946719f6c82d2&callback=minidbready",document.head.appendChild(s)}
+</script>
+<script data-cfasync="false" src="/etc/clientlibs/pluralsight/main/js/separates/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="/etc/clientlibs/pluralsight/uber.min.da56f27cfe4e2f4340bcba5af668eb5d.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6966154/7969012/css/fonts.css" />
+<script data-cfasync="false">
+if(window.loadRemoteScript=function(e,t,i,n,o){var s=document.createElement("script");s.type=t||"text/javascript",s.id=n||null,1==i&&(s.async=i||1),s.readyState?s.onreadystatechange=function(){"loaded"!=s.readyState&&"complete"!=s.readyState||(s.onreadystatechange=null,o())}:s.onload=function(){o()},s.src=("https:"==document.location.protocol?"https://":"http://")+e,document.getElementsByTagName("head")[0].appendChild(s)},-1<document.URL.indexOf("refid=")){var queryEnd=document.URL.split("refid=")[1],refID=queryEnd.split("&")[0],d=new Date;d.setTime(d.getTime()+6048e5),document.cookie="refID="+refID+"; expires="+d.toUTCString()+"; path=/"}if(-1<document.cookie.indexOf("refID=")){refID=jQuery.cookie("refID");jQuery("a[href*='cvent.com']").each(function(){-1==jQuery(this).attr("href").indexOf("refid")&&jQuery(this).attr("href",jQuery(this).attr("href")+"?refid="+refID)})}function setSelectedInterest(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_si="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedInterest=e}function setSelectedConsumerType(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_sct="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedConsumerType=e}function setSelectedBusinessType(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_sbt="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedBusinessType=e}-1<document.cookie.indexOf("ps_si=")&&(window.selectedInterest=document.cookie.split("ps_si=")[1].split(";")[0]),-1<document.cookie.indexOf("ps_sct=")&&(window.selectedConsumerType=document.cookie.split("ps_sct=")[1].split(";")[0]),-1<document.cookie.indexOf("ps_sbt=")&&(window.selectedBusinessType=document.cookie.split("ps_sbt=")[1].split(";")[0]);var inflDate=new Date;inflDate.setTime(inflDate.getTime()+18e5);var visNumDate=new Date;if(visNumDate.setTime(visNumDate.getTime()+31536e6),-1<document.cookie.indexOf("ps_infl")){var infl=document.cookie.split("ps_infl=")[1].split(";")[0];document.cookie="ps_infl="+infl+"; expires="+inflDate.toUTCString()+"; path=/"}else{var visNum=1;-1<document.cookie.indexOf("ps_visNum")&&(visNum=parseInt(document.cookie.split("ps_visNum=")[1].split(";")[0])+1),document.cookie="ps_visNum="+visNum+"; expires="+visNumDate.toUTCString()+"; path=/",getParameterByName("aid")||getParameterByName("vid")||""!=document.referrer&&-1==document.referrer.indexOf("pluralsight.com")?document.cookie="ps_infl=1; expires="+inflDate.toUTCString()+"; path=/":document.cookie="ps_infl=0; expires="+inflDate.toUTCString()+"; path=/"}
+</script>
+<script src="//assets.adobedtm.com/2c5f2b30762ae62377916c09612cd9d60054fba9/satelliteLib-37555ec996abbafa2d661529286b52f4b2a600d9.js"></script>
+<link rel="apple-touch-icon" sizes="57x57" href="/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/etc/clientlibs/pluralsight/main/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/etc/clientlibs/pluralsight/main/images/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/etc/clientlibs/pluralsight/main/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/etc/clientlibs/pluralsight/main/images/favicons/manifest.json">
+<link rel="mask-icon" href="/etc/clientlibs/pluralsight/main/images/favicons/safari-pinned-tab.svg" color="#e71585">
+<link rel="shortcut icon" href="/etc/clientlibs/pluralsight/main/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e71585">
+<meta name="msapplication-TileImage" content="/etc/clientlibs/pluralsight/main/images/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="/etc/clientlibs/pluralsight/main/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<title>JavaScript.com</title>
+<meta property="og:title" content="Free JavaScript training, resources and examples for the community">
+<meta name="twitter:title" content="Free JavaScript training, resources and examples for the community">
+</head>
+<body class="mode-disabled javascript-page">
+<div class="site-wrap">
+<div class="nav-context ">
+<noindex>
+<header class="javascript-header header_padding">
+<a href="/"><img class="javascript-logo logo-large" src="/etc/clientlibs/pluralsight/main/images/js-logo.png"></a>
+<a href="/"><img class="javascript-logo logo-small" src="/etc/clientlibs/pluralsight/main/images/js-logo-sm.png"></a>
+<div class="header_utilities">
+<a href="/try" class="button button--pink button--small">Try JavaScript</a>
+<a href="/try" class="header-link try">Try</a>
+<a href="/learn/strings" class="header-link">Learn</a>
+<a href="/resources" class="header-link">Resources</a>
+<a href="/about" class="header-link">About</a>
+</div>
+</header>
+</noindex>
+<div style="display:none;" id="b2c-top-promo">
+</div>
+<div id="content" role="main">
+<div class="contain"><div class="generic-block section">
+<div id="javascript-hero_" class="hidden"></div>
+<div class="generic-block-wrapper  block block--true-black block--center generic-block--five-ten  padding-top-hundred padding-bottom-hundred-fifty javascript-hero    clearfix" style="background-image: url('/content/pluralsight/en/jscom/jcr:content/main/generic_block/image-res.img.15a3aff8-c62d-4d52-afcc-25da500f2bac.jpg');background-position: center;">
+<div class="main clearfix">
+<div class="clearfix"><div class="column-control section">
+<div>
+<div class="container column-control-container ">
+<div class="row      column-control--narrow">
+<div class="large-12 columns "><div class="title section">
+<div data-emptytext="Title">
+<h2>
+Ready to try
+</h2>
+</div></div>
+<div class="title section">
+<div data-emptytext="Title">
+<h1>
+JavaScript?
+</h1>
+</div></div>
+<div class="text-3 text section">
+<div class="cmp-text">
+<p>Begin learning here by typing in your first name surrounded by quotation marks, and ending with a semicolon. For example, you could type the name <code>&quot;Jamie&quot;;</code>  and then hit enter.</p>
+</div>
+</div>
+<div class="free-form-component section">
+<div class="javascript-input">
+<input type="text" id="inputJS" />
+<span class="javascript-input--arrow"></span>
+</div>
+<script type="text/javascript">
+  jQuery(document).ready(function () {
+var homepageChallengeAnswer = /^('|")[^'"]+\1;?$/;
+var $javascriptInput = jQuery('.javascript-input input');
+setTimeout(function(){
+       jQuery('#inputJS').focus();
+},600);
+
+$javascriptInput.on("keyup", function(event){
+   if (event.keyCode === 13){
+      if ( $javascriptInput.val().match(homepageChallengeAnswer)){
+           jQuery('.javascript-input input').addClass('correct');
+           jQuery('.javascript-input--arrow').addClass('checkmark');
+           jQuery('<a href="/try" class="button--next button--small">Next Challenge</a>').appendTo('.javascript-input');
+           var name = $javascriptInput.val().replace(/['";]/g, "");
+           document.cookie = "try_name=" + name
+       } else {
+            jQuery('.javascript-input input').removeClass('correct');
+            jQuery('.javascript-input input').addClass('incorrect');
+            jQuery('.javascript-input--arrow').removeClass('checkmark');
+            jQuery('.button--next.button--small').remove();
+            setTimeout(function(){ jQuery('.javascript-input input').removeClass('incorrect'); }, 600);
+       }
+   }
+});
+});
+</script></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="free-form-component section">
+<style>
+  
+.javascript-hero h1 {font-size: 72px; font-weight: 700; margin-top: 0; line-height: 1;}
+.javascript-hero h2 {font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: #aaaaaa; margin: 0;}
+.javascript-hero .text-3 p {font-weight: 200; font-size: 18px; line-height: 1.8;}
+.javascript-hero .text-3 .break {display: block;}
+.javascript-hero code {color: #555; padding: 5px; border-radius: 3px;}
+.javascript-input {position: relative; margin-top: 30px;}
+.javascript-hero .javascript-input input {background: rgba(18,18,18,.9); height: 60px; padding: 10px 10px 15px 40px; border: 0; color: white; font-size: 22px; font-weight: 500; transition: background .4s linear; font-family:monospace; }
+.javascript-hero .javascript-input input:focus {background: rgba(18,18,18,.9); border: 0;}
+.javascript-hero .javascript-input input.incorrect{background: rgba(155,28,32,.9);}
+.javascript-hero .javascript-input input.correct{background: rgba(155,200,80,.9);}
+.javascript-hero .javascript-input .javascript-input--arrow {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 5px;
+    margin-top: -9px;
+    position: absolute;
+}
+.javascript-hero .javascript-input .javascript-input--arrow.checkmark {
+    height: 20px;
+    width: 10px;
+    border: solid white;
+    border-width: 0px 2px 2px 0px;
+    margin-top: -12px;
+    left: 15px;
+}
+.javascript-hero .button--next.button--small {
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    background: #6d8d3b;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    margin: 0;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 887px) {
+.javascript-hero h1  {font-size: 60px;}
+.javascript-hero .text-3 .break {display: inline-block;}
+}
+.javascript-hero {position: relative;}
+.hero--gradient-transparent {
+width: 100%;
+height: 100px;
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+position: absolute;
+bottom: 0;
+}
+</style>
+<div class="hero--gradient-transparent"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="generic-block section">
+<div class="generic-block-wrapper  block block--true-black block--left generic-block--cigar  padding-top-zero padding-bottom-zero     clearfix">
+<div class="main clearfix">
+<div class="clearfix"><div class="flex-block section">
+<div class="flex-block-container flex-section   desktop-three tablet-three mobile-one no-margins"><div class="flex-open-block section">
+<div class="flex-open-block-wrapper block--true-black block--center    clearfix" style="background-image: url('/content/pluralsight/en/jscom/jcr:content/main/generic_block_614019370/parsys/flex_block/parsys/flex_open_block/image-res.img.94d0838d-d909-47d1-a1de-a5ca4a3a0bda.jpg');background-position: center;">
+<div class="main clearfix"><div class="spacer section">
+<div class="spacer  " style="height:120px"></div>
+</div>
+<div class="column-control section">
+<div>
+<div class="container column-control-container ">
+<div class="row      ">
+<div class="large-12 columns customPadding" style="padding-left: 0px; padding-right: 0px;"><div class="title section">
+<div data-emptytext="Title">
+<h3 class="title--gray  font-size-8 title--center  title--heavier  ">
+<span style="letter-spacing: 3.0px;">INTRODUCTION</span>
+</h3>
+</div></div>
+<div class="layout-block section">
+<div>
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--tablet--12 aem-Grid--phone--12 ">
+<div class="text-3 text aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--2 aem-GridColumn--offset--phone--0">
+<div class="cmp-text">
+<p style="text-align: center;"><span class="fs--thirty-two"><span class="tc-white">Courses and paths to get you going</span></span></p>
+</div>
+</div>
+<div class="ps-button aem-GridColumn aem-GridColumn--default--12">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="https://www.pluralsight.com/product/paths" target="_blank" style=" min-width:180px;" class="button button--pink button--small  " data-aa-title="default-cta">
+Get started
+</a>
+</div>
+</div></div>
+</div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:100px"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper block--true-black block--center    clearfix" style="background-image: url('/content/pluralsight/en/jscom/jcr:content/main/generic_block_614019370/parsys/flex_block/parsys/flex_open_block_copy/image-res.img.3d432f03-56b9-48c9-8042-45ad03510acc.jpg');background-position: center;">
+<div class="main clearfix"><div class="spacer section">
+<div class="spacer  " style="height:120px"></div>
+</div>
+<div class="column-control section">
+<div>
+<div class="container column-control-container ">
+<div class="row      ">
+<div class="large-12 columns customPadding" style="padding-left: 0px; padding-right: 0px;"><div class="title section">
+<div data-emptytext="Title">
+<h3 class="title--gray  font-size-8 title--center  title--heavier  ">
+<span style="letter-spacing: 3.0px;">SKILL ASSESSMENT</span>
+</h3>
+</div></div>
+<div class="layout-block section">
+<div>
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--tablet--12 aem-Grid--phone--12 ">
+<div class="text-3 text aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--tablet--none aem-GridColumn--phone--10 aem-GridColumn aem-GridColumn--offset--phone--1 aem-GridColumn--default--8 aem-GridColumn--offset--default--2">
+<div class="cmp-text">
+<p style="text-align: center;"><span class="fs--thirty-two"><span class="tc-white">Know where your skills stand</span></span></p>
+</div>
+</div>
+<div class="ps-button aem-GridColumn aem-GridColumn--default--12">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="https://www.pluralsight.com/product/skill-iq" target="_blank" style=" min-width:180px;" class="button button--pink button--small  " data-aa-title="default-cta">
+Measure your skills
+</a>
+</div>
+</div></div>
+</div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:100px"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper block--true-black block--center    clearfix" style="background-image: url('/content/pluralsight/en/jscom/jcr:content/main/generic_block_614019370/parsys/flex_block/parsys/flex_open_block_copy_1521714602/image-res.img.c2de1b70-1e69-4c28-a76f-8ab2215e266d.jpg');background-position: center;">
+<div class="main clearfix"><div class="spacer section">
+<div class="spacer  " style="height:120px"></div>
+</div>
+<div class="column-control section">
+<div>
+<div class="container column-control-container ">
+<div class="row      ">
+<div class="large-12 columns customPadding" style="padding-left: 0px; padding-right: 0px;"><div class="title section">
+<div data-emptytext="Title">
+<h3 class="title--gray  font-size-8 title--center  title--heavier  ">
+<span style="letter-spacing: 3.0px;">INTRODUCTION</span>
+</h3>
+</div></div>
+<div class="layout-block section">
+<div>
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--tablet--12 aem-Grid--phone--12 ">
+<div class="text-3 text aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--tablet--none aem-GridColumn--phone--10 aem-GridColumn aem-GridColumn--offset--phone--1 aem-GridColumn--default--8 aem-GridColumn--offset--default--2">
+<div class="cmp-text">
+<p style="text-align: center;"><span class="fs--thirty-two"><span class="tc-white">See where Javascript ranks</span></span></p>
+</div>
+</div>
+<div class="ps-button aem-GridColumn aem-GridColumn--default--12">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="https://www.pluralsight.com/tech-index" target="_blank" style=" min-width:180px;" class="button button--pink button--small  " data-aa-title="default-cta">
+Dive into the data
+</a>
+</div>
+</div></div>
+</div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:100px"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="/etc/clientlibs/pluralsight/main/js/separates/slick.min.js"></script></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="ps_pro_qty_modal">
+<div class="column-control section">
+<div class="container column-control-container ">
+<div class="row column-control--wide">
+<div class="large-5 columns column_qty large-push-7">
+<h3>Ready to skill up<br>your entire team?</h3>
+<div class="qty-selector">
+<div class="qty-down"><i class="icons" icon="down-arrow"></i></div>
+<div class="qty-display">
+<div class="qty-display-number">10</div>
+<div class="qty-display-label">Licenses</div>
+</div>
+<div class="qty-up"><i class="icons" icon="up-arrow"></i></div>
+</div>
+<div class="qty-sales-message hidden">Need more licenses? <a href="https://www.pluralsight.com/business/contact-sales">Contact sales</a>.</div>
+<a class="button button--gradient button--small biz_qty_checkout pilot-hide" data-aa-title="pro-qty-modal-signup" href="https://billing.pluralsight.com/checkout?sku=PROFESSIONAL-SG&quantity=10">Continue to checkout</a>
+<a class="button button--gradient button--small biz_qty_checkout pilot-show" data-aa-title="pro-qty-modal-trial" href="https://billing.pluralsight.com/checkout?sku=PROFESSIONAL-SG-PILOT&quantity=10">Continue to checkout</a>
+<div class="ps_pro_qty_modal-cancel">Cancel</div>
+</div>
+<div class="large-7 columns column_feature large-pull-5">
+<h3 class="pilot-hide">With your Pluralsight plan, you can:</h3>
+<h3 class="pilot-show">With your 14-day pilot, you can:</h3>
+<ul>
+<li class="pilot-hide">Access thousands of videos to develop critical skills</li>
+<li class="pilot-show">Give up to 10 users access to thousands of video courses</li>
+<li>Practice and apply skills with interactive courses and projects</li>
+<li>See skills, usage, and trend data for your teams</li>
+<li>Prepare for certifications with industry-leading practice exams</li>
+<li>Measure proficiency across skills and roles</li>
+<li>Align learning to your goals with paths and channels</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<noindex>
+<footer class="javascript-footer">
+<div class="right-content">
+<a href="/learn/strings" class="footer-link">Learn</a>
+<span class="footer-divider">/</span>
+<a href="/resources" class="footer-link">Resources</a>
+<span class="footer-divider">/</span>
+<a href="/about" class="footer-link">About</a>
+</div>
+<div class="left-content">
+<a href="/"><img class="javascript-logo logo-large" src="/etc/clientlibs/pluralsight/main/images/js-logo.png"></a>
+<a href="/"><img class="javascript-logo logo-small" src="/etc/clientlibs/pluralsight/main/images/js-logo-sm.png"></a>
+<p class="copyright">© 2016 - 2019 JavaScript.com</p>
+</div>
+</footer>
+</noindex>
+<style>
+    .cookie_notification--opt_in{
+        color: #e80a89 !important;
+        border-color: #e80a89 !important;
+    }
+</style>
+<script type="text/javascript" src="/etc/clientlibs/pluralsight/uber.min.c53ae7e0d330d77d63b712f6b20685f5.js" defer></script>
+<script type="text/javascript">
+        //DEMANDBASE FULL LIBRARIES
+        if (document.cookie.indexOf("ps_trk=1") > -1){
+          loadRemoteScript(
+            'scripts.demandbase.com/LrYAV7hU.min.js',
+            'text/javascript',
+            1,
+            'demandbase_js_secondary_libs',
+            function() {
+              window.dbReady = true;
+              var newEvent = new CustomEvent( "PS.dbReady", { bubbles: true, cancelable: false});
+              document.querySelector('body').dispatchEvent(newEvent);
+            }
+          );
+        }
+    </script>
+</div>
+</div>
+<div class="cookie_notification options" style="display:none;">
+<p class="cookie_notification--text">We use cookies to make interactions with our websites and services easy and meaningful. For more information about the cookies we use or to find out how you can disable cookies, <a href="https://www.pluralsight.com/privacy" target="_blank">click here</a>.</p>
+<div class="cookie_notification--options">
+<a class="button button--secondary button--tiny cookie_notification--opt_in" href="#">Accept cookies and close this message</a>
+<a class="cookie_notification--opt_out" href="#">Disable cookies</a>
+</div>
+</div>
+<div class="cookie_notification opted_out" style="display:none;">
+<p class="cookie_notification--text">You have disabled cookies and are browsing in private mode. For the best possible experience on our website, please accept cookies. For additional details please read our <a href="https://www.pluralsight.com/privacy" target="_blank">privacy policy</a>.</p>
+<a class="cookie_notification--opt_in text-only" href="#">Accept cookies and close this message</a>
+</div>
+<script data-cfasync="false">
+-1==document.cookie.indexOf("ps_optout")&&-1==document.URL.indexOf("noCookieBanner=true")?jQuery(".cookie_notification.options").slideDown():-1<document.cookie.indexOf("ps_optout=1")&&jQuery(".cookie_notification.opted_out").slideDown(),jQuery(".cookie_notification--opt_in").click(function(o){o.preventDefault();var t=new Date(Date.now()+31536e6);document.cookie="ps_optout=0; expires="+t.toUTCString()+"; path=/"+(-1<document.URL.indexOf("pluralsight.com")?"; domain=pluralsight.com":""),jQuery(".cookie_notification").slideUp()}),jQuery(".cookie_notification--opt_out").click(function(o){o.preventDefault();for(var t=document.cookie.split("; "),e=0;e<t.length;e++)for(var i=window.location.hostname.split(".");0<i.length;){var n=encodeURIComponent(t[e].split(";")[0].split("=")[0])+"=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain="+i.join(".")+" ;path=",c=location.pathname.split("/");for(document.cookie=n+"/";0<c.length;)document.cookie=n+c.join("/"),c.pop();i.shift()}var a=new Date(Date.now()+31536e6);document.cookie="ps_optout=1; expires="+a.toUTCString()+"; path=/"+(-1<document.URL.indexOf("pluralsight.com")?"; domain=pluralsight.com":""),window.location.reload()});
+</script>
+</body>
+</html>

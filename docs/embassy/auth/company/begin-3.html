@@ -1,0 +1,87 @@
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Redirecting to Identity Provider</title>
+<script type="text/javascript"
+	src="/embassy/static/jquery-1.6.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(
+ function(){ 
+   if(window.top != window.self){
+	 $("#formbody").html('<p class="info">Please refresh this page after authenticating in the pop-up window.</p>');
+	 window.open(document.URL); 	
+   }else{
+	 document.forms[0].submit();
+   }
+ });
+</script>
+
+<style type="text/css">
+p {
+	font-size: 9px
+}
+
+.link {
+	margin:0;     
+	padding:0;     
+	border:0;     
+	color:#8f1f08;     
+	background:transparent;     
+	font:inherit;      
+	line-height:normal; 
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.info {
+	font-size: 15px;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+	<div id="formbody">
+		<p>Redirecting to Cisco Cloud Web Security authentication service, please wait...</p>
+		<form method="post" action="https://stsint.abb.com/adfs/ls/">
+			<input type="hidden" id="SAMLRequest" name="SAMLRequest"
+				value="PHNhbWwycDpBdXRoblJlcXVlc3QgeG1sbnM6c2FtbDJwPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FN
+TDoyLjA6cHJvdG9jb2wiIERlc3RpbmF0aW9uPSJodHRwczovL3N0c2ludC5hYmIuY29tL2FkZnMv
+bHMvIiBJRD0iXzAwN2FiZGVmMTE0MjNiODI0NTIwNWVlYjU1ZWU0MTAxNjJiMjU5OWUiIElzc3Vl
+SW5zdGFudD0iMjAxOS0wMi0xOVQwMzo0Njo1Ni43MDZaIiBWZXJzaW9uPSIyLjAiPjxzYW1sMjpJ
+c3N1ZXIgeG1sbnM6c2FtbDI9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphc3NlcnRpb24i
+PnNhbWwuY2lzY29jbG91ZHdlYnNlY3VyaXR5LmNvbTwvc2FtbDI6SXNzdWVyPjxkczpTaWduYXR1
+cmUgeG1sbnM6ZHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyMiPjxkczpTaWdu
+ZWRJbmZvPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53
+My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIi8+PGRzOlNpZ25hdHVyZU1ldGhvZCBBbGdvcml0
+aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMDQveG1sZHNpZy1tb3JlI3JzYS1zaGEyNTYiLz48
+ZHM6UmVmZXJlbmNlIFVSST0iI18wMDdhYmRlZjExNDIzYjgyNDUyMDVlZWI1NWVlNDEwMTYyYjI1
+OTllIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53
+My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiLz48ZHM6VHJhbnNmb3Jt
+IEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIi8+PC9k
+czpUcmFuc2Zvcm1zPjxkczpEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9y
+Zy8yMDAwLzA5L3htbGRzaWcjc2hhMSIvPjxkczpEaWdlc3RWYWx1ZT5pOVNCeDZ4R3lNamxrZnRD
+VUlKSTNNOXkzOGs9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZElu
+Zm8+PGRzOlNpZ25hdHVyZVZhbHVlPkpSSWE0WjdkaThqbnVxTWtERXprMTd2K1MyZUZjSFpwd2pv
+L2dXWmpQWFN4TndqNDVBTFdkWkQ3cDIxM2NwOWZUb202cnNLZW5wckx5cTJlbnhpdUt2UGRLTFM2
+ck1XNWtPUk5TNlh1dFAwQ1N1QzFkR3lTY3NQTVYwYStkdmdKdzJTbmh5dlBqaEV5WTViWEw5ejhs
+NnlQMkprVm9iL2JMc3VacDJwL1dYbzk1ZzRIRzdhVS9LbTg0SklyOWlacU04NmtaeU1pUDRaV3dy
+Y1ZwbWhtZkNPSEYzNkNTTEZzdkY2MVh0RmUxVzNRNUl1VmFEZjdSemVvVmtQUVFKV0ZkYytPdUl3
+YkZhZEt6VmRHZUE3MFBMWm02V3JVNnkybSs0SUUycUpBc3NXN0lJbXp2T1RSMVJWUFpSWExQQVU5
+KysvR09rMFB2YVhMeVJOL3lwMWdudz09PC9kczpTaWduYXR1cmVWYWx1ZT48L2RzOlNpZ25hdHVy
+ZT48L3NhbWwycDpBdXRoblJlcXVlc3Q+
+" /> <input type="hidden"
+				id="RelayState" name="RelayState"
+				value="1rgWrCJoPb3HPdWhbILiTEqnaB84K1MsvLCSEfHP0rE_EfMdiJOyMsLnrjn55Rrme_F_kedRZVu37-552YP3GZ9HJAk4VqAzClbcBdGvGBTNPe3VitavKBNG6ZYbl8bTPFvCzgreQWWXu_ZWWJJrK6dGdttZdee8vdjBZsAf7ISOlC1cVBOVleG80KcbmQR807mAsnSo4_G36znQboggp1c8wbvYyj7e-DAUplJCf7I92lbwT9WDLjyt_U6iQBgURkQ91HhEwP3_2hTJe5S-ENL6F7aUen0FaG0fGQjgmYYE" />
+			<p>
+				If you are not redirected in a few seconds, <input class="link"
+					type="submit" value="click here" />
+			</p>
+		</form>
+	</div>
+	
+	<!-- Served by cws-prd-emb-1-02.mum1.sco.cisco.com -->
+</body>
+</html>

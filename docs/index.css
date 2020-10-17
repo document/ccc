@@ -1,0 +1,107 @@
+/* 	header moblie&email */
+.top-border-style {
+    height: 26px;
+}
+/*.top-border-style span{
+	display:none;
+}*/
+.theme-bg {
+    background-color: #607d8b !important;
+}
+.info-bg {
+    background-color: #607d8b;
+}
+.dark-green-bg {
+    background-color:#607d8b;
+}
+@media (max-width: 426px){
+	.top-border-style {
+    display:none;
+		 height: 0px;
+}
+	.admin-bar.has-top-border-style .header-wrapper.navbar-fixed-top {
+    top: 0px !important;
+}
+.has-top-border-style .header-wrapper.navbar-fixed-top{
+		 top: 0px !important;
+	}
+	.header-transparent .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a{
+	color:black !important;
+}
+}
+.phone-header{
+	float:left;
+	padding-left:50px;
+	color:#ffffff;
+	padding-bottom: 19px;
+	font-size: 12px;
+}
+.email-header{
+	float:right;
+	padding-right:50px;
+	color:#ffffff;
+	padding-bottom: 19px;
+	font-size: 12px;
+}
+.has-top-border-style .header-wrapper.navbar-fixed-top{
+	top: 20px;
+}
+.admin-bar.has-top-border-style .header-wrapper {
+    top: 70px;
+}
+@media (max-width: 782px){
+.admin-bar.has-top-border-style .header-wrapper.navbar-fixed-top {
+    top: 70px;
+}
+	.has-top-border-style .header-wrapper.navbar-fixed-top{
+	top: 30px;
+}
+}
+.site-logo, .sticky-logo {
+    height: 60px !important;
+}
+.client-photo {
+    display: none;
+}
+
+.header-transparent .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a{
+	color:white;
+}
+.navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover {
+	color:#d2a51e !important;
+}
+.navbar-default .navbar-nav li.current-menu-item>a{
+	color:#d2a51e !important;
+}
+.quote-content > p:before{
+	 content: '"';
+}
+.quote-content > p:after{
+	 content: '"';
+}
+/*enquery icon*/
+.enquery-icon{
+	float:left;
+}
+.megamenu-wrapper> ul > li > a
+{
+	color:black;
+	font-weight: bold;
+}
+.vc_tta-panel.vc_active .vc_tta-panel-heading{
+	background-color:#607d8b82;
+}
+.vc_tta-panel-heading{
+	background-color:#607d8b82;
+}
+div.wpcf7-mail-sent-ok {
+    text-align: center;
+}
+.hero-block-caption h2, .slider-caption h2{
+	color: #26547c !important;
+    font-size: 35px !important;
+	font-weight: 700;
+}
+.hero-block-caption h2 strong, .slider-caption h2 span, .slider-caption h2 strong {
+    font-weight: 700;
+}
